@@ -37,22 +37,27 @@ cd whatsapp-bot-flask
 ```
 
 ###2️⃣ Create a virtual environment
+```
 python -m venv venv
-
+```
 Activate it:
+```
 Windows : venv\Scripts\activate
 macos/linux : source venv/bin/activate
-
+```
 ###3️⃣ Install dependencies
+```
 pip install -r requirements.txt
 if requirements.txt not there create one
 pip freeze > requirements.txt
-
+```
 ###4️⃣ Create .env file
+```
 WHATSAPP_TOKEN=YOUR_LONG_LIVED_ACCESS_TOKEN
 WHATSAPP_PHONE_NUMBER_ID=YOUR_PHONE_NUMBER_ID
 WHATSAPP_VERIFY_TOKEN=mywhatsapptestbot123
 GRAPH_API_VERSION=v22.0
+```
 
 🌍 Webhook Setup
 5️⃣ Start ngrok
@@ -80,6 +85,8 @@ Send a message (e.g., hi) to your WhatsApp test number.
 The bot will reply.
 
 🛠 Built With
+```
 Flask
 Requests
 WhatsApp Cloud API
+```
